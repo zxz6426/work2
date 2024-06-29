@@ -63,11 +63,11 @@
         });
     }
 
-    function updateSnackMethod(fid) {
-        console.log("修改：" + fid)
+    function updateSnackMethod(bid) {
+        console.log("修改：" + bid)
         $.ajax({
-            url: "/insertFilm",
-            data: { fid: fid },
+            url: "/updateSnack",
+            data: { bid: bid },
             type: "POST",
             success: function (data) {
                 if (data == "success") {

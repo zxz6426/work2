@@ -66,7 +66,7 @@
     function updateSnackMethod(fid) {
         console.log("修改：" + fid)
         $.ajax({
-            url: "/insertFilm",
+            url: "/updateSnack",
             data: { fid: fid },
             type: "POST",
             success: function (data) {
