@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="book-sys" />
         <module name="book-sys1" />
+        <module name="snack-sys" />
       </profile>
     </annotationProcessing>
   </component>
