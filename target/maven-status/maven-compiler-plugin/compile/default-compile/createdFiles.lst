@@ -1,0 +1,5 @@
+com\lyf\book\controller\SnackController.class
+com\lyf\book\mapper\SnackMapper.class
+com\lyf\book\service\SnackService.class
+com\lyf\book\service\impl\SnackServiceImpl.class
+com\lyf\book\pojo\Snack.class

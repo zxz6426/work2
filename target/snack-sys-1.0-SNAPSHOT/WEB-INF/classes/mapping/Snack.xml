@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyf.book.mapper.SnackMapper">
+    <resultMap id="SnackMap" type="Snack">
+        <id column="b_id" property="bid"/>
+        <result column="b_name" property="bname" />
+        <result column="b_author" property="bauthor" />
+        <result column="b_time" property="btime" />
+        <result column="b_type" property="btype" />
+    </resultMap>
+
+    <select id="querySnacks" resultMap="SnackMap">
+        SELECT b_id,b_name,b_author,b_time,b_type FROM snackmanage
+    </select>
+
+    <insert id="addSnacks" >
+        INSERT INTO snackmanage VALUES (DEFAULT,#{bname},#{bauthor},#{btime},#{btype});
+    </insert>
+
+    <delete id="deleteSnacks">
+        DELETE FROM snackmanage WHERE B_ID=#{bid}
+    </delete>
+
+    <update id="updateSnacks">
+        UPDATE snackmanage
+        SET b_name = #{bname}, b_author = #{bauthor}, b_time = #{btime}, b_type = #{btype}
+        WHERE  B_ID = #{bid};
+    </update>
+
+</mapper>
