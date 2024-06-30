@@ -12,9 +12,10 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #1e2022;
         }
         table {
-            width: 90%;
+            width: 100%;
             border-collapse: collapse;
             margin: 20px auto;
             border: 1px solid #ddd;
@@ -24,22 +25,43 @@
             padding: 10px;
             text-align: center;
         }
+
         th {
-            background-color: #f2f2f2;
+            background-color: #52616b; /* 设置表头背景颜色 */
+            color: white;
+        }
+
+        /* 设置奇数行背景颜色 */
+        tr:nth-child(odd) {
+            background-color: #c9d6df; /* 奇数行背景颜色 */
+        }
+
+        /* 设置偶数行背景颜色 */
+        tr:nth-child(even) {
+            background-color: #52616b; /* 偶数行背景颜色 */
         }
         a {
             text-decoration: none;
-            color: #007bff;
+            color: #212121;
             cursor: pointer;
         }
         a:hover {
             text-decoration: underline;
+            color: #1e88e5
         }
         .add-link {
             display: block;
             margin: 20px auto;
             text-align: center;
             font-size: 18px;
+            color: #c9d6df; /* 设置链接文字颜色 */
+        }
+        .add-link:hover {
+            text-decoration: underline;
+            color: #1e88e5; /* 设置链接鼠标悬停时的文字颜色 */
+        }
+        h1{
+            color: #212121;
         }
     </style>
 </head>

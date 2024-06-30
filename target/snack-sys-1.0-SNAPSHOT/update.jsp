@@ -7,6 +7,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #1e2022;
         }
         table {
             width: 50%;
@@ -18,9 +19,11 @@
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
+            color: white;
         }
         th {
             background-color: #f2f2f2;
+            color: #212121;
         }
         input[type=text], select {
             width: calc(100% - 20px);
@@ -42,6 +45,9 @@
         }
         input[type=submit]:hover {
             background-color: #45a049;
+        }
+        input[type=text] {
+            color: white;
         }
     </style>
 </head>
